@@ -1,0 +1,11 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  background-color: #aaaaaa;
+  color: #1b29aa;
+}
+/*# sourceMappingURL=main.css.map */

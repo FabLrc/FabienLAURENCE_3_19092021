@@ -1,0 +1,16 @@
+// IMPORT SASS
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+
+body
+{
+    background-color: $colour-primary;
+    color: $colour-secondary;
+}

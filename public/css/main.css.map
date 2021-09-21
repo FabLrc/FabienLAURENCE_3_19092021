@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AQAA,AAAA,MAAM,CAAA;EACF,OAAO,EAAE,IAAI;CAChB;;ARSD,AAAA,IAAI,CACJ;EACI,gBAAgB,ECbH,OAAO;EDcpB,KAAK,ECbU,OAAO;CDczB",
+    "sources": [
+        "../../sass/main.scss",
+        "../../sass/utils/_variables.scss",
+        "../../sass/utils/_functions.scss",
+        "../../sass/utils/_mixins.scss",
+        "../../sass/utils/_extensions.scss",
+        "../../sass/base/_base.scss",
+        "../../sass/base/_typography.scss",
+        "../../sass/components/_buttons.scss",
+        "../../sass/layouts/_header.scss",
+        "../../sass/layouts/_nav.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
