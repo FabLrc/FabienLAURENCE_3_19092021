@@ -1,11 +1,20 @@
+body {
+  margin: 0;
+}
+
+.typo_logo {
+  font-style: italic;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-body {
-  background-color: #aaaaaa;
-  color: #1b29aa;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
 }
 /*# sourceMappingURL=main.css.map */
