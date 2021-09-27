@@ -1,0 +1,13 @@
+.button
+{
+    background: rgb(147,86,220);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    border: 0;
+    border-radius: 100px;
+    padding: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 1 1 1;
+    @include shadow;
+}
