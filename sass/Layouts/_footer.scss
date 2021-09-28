@@ -1,0 +1,13 @@
+footer {
+    background-color: $colour-footer;
+    color: white;
+    padding: 1em 2em 0 2em;
+    @include justify-column;
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $colour-secondary;
+        }
+    }
+}

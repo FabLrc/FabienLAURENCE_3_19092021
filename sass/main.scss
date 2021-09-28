@@ -6,8 +6,10 @@
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/button-functionning";
 @import "./layouts/header";
 @import "./layouts/nav";
+@import "./Layouts/footer";
 
 .location {
     @include justify-center;
@@ -19,16 +21,33 @@
 }
 .home-description {
     @include justify-column;
-    display: block;
     padding: 2.5em;
     text-align: center;
     background-color: $colour-dark-white;
+    display: block;
     h2 {
         padding-bottom: 0.5em;
         font-weight: bold;
         font-size: 1.6em;
     }
-    p {
-        padding-bottom: 1.5em;
+    &__subtitle {
+        margin-bottom: 2em; // N'est pas pris en compte ?
     }
+}
+.functionning {
+    @include justify-column;
+    padding: 3em 2em 3em 2em;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 7% 0px; 
+    grid-template-areas: 
+    "."
+    "."
+    ".";
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
 }

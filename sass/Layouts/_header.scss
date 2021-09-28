@@ -1,6 +1,7 @@
 header{
     @include justify-center;
+    @include shadow;
+    border: 0;
     background-color: white;
-    box-shadow: 0px 5px 5px #000;
-    padding: 1rem;
+    padding: 1em;
 }
