@@ -36,7 +36,7 @@
     }
 }
 .functionning {
-    @include justify-column;
+    @include justify-column; 
     position: relative;
     padding: 3em 2em 3em 2em;
     display: grid; 

@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>OhMyFood! - Commandez et réservez en ligne !</title>
         <link href="public/css/main.css" rel="stylesheet" />
+        <link href="public/css/main.css" rel="stylesheet" /> <!-- Faut-il déplacer la page d'acceuil sur une autre stylesheet ? -->
         <script src="https://kit.fontawesome.com/574bfb0df8.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -11,6 +12,7 @@
             <h1 class="typo_logo">ohmyfood</h1>
         </header>
         <main>
+            <div class="block-page">
             <section class="location">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>Paris, Belleville</h3>
@@ -18,7 +20,7 @@
             <section class="home-description">
                 <h2 class="home-description__heading">Réservez le menu qui <br>vous convient</h2>
                 <p class="home-description__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a class="home-description__button button" href="#">Explorer nos restaurants</a>
+                <a class="home-description__button button" href="#restaurants">Explorer nos restaurants</a>
             </section>
             <section class="functionning">
                 <h3>Fonctionnement</h3>
@@ -35,10 +37,10 @@
                     <p><i class="fas fa-store"></i>Dégustez au restaurant</p>
                 </div>
             </section>
-            <section class="restaurants">
+            <section class="restaurants" id="restaurants">
                 <h3>Restaurants</h3>
                 <div class="restaurants__forms">
-                    <a class="restaurants__forms__card" href="#">
+                    <a class="restaurants__forms__card" href="la_palette_du_gout.html">
                         <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo de restaurant"/>
                         <div class="restaurants__forms__card__footer">
                             <div class="restaurants__forms__card__footer__infos">
@@ -86,13 +88,15 @@
                     </a>
                 </div>
             </section>
-            <footer>
-                <h4 class="typo_logo">ohmyfood</h4>
-                <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-                <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
-            </footer>
-        </main>
+        </div>
+    </main>
+        <footer>
+            <h4 class="typo_logo">ohmyfood</h4>
+            <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+            <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </footer> 
+     
     </body>
 </html>

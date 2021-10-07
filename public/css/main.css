@@ -5,6 +5,20 @@
   text-decoration: none;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.block-page {
+  max-width: 1440px;
+  width: 100%;
+}
+
 .typo_logo {
   font-family: 'Shrikhand', cursive;
 }
