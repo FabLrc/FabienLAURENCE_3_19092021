@@ -1,0 +1,105 @@
+.location {
+    @include justify-center;
+    padding: 1rem;
+    background-color: $colour-darker-white;
+    h3 {
+        padding-left: 1rem;
+    }
+}
+.home-description {
+    @include justify-column;
+    padding: 2.5em;
+    text-align: center;
+    background-color: $colour-dark-white;
+    display: block;
+    h2 {
+        padding-bottom: 0.5em;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+    &__subtitle {
+        margin-bottom: 2em;
+        font-size: 1.2em;
+    }
+}
+.functionning {
+    @include justify-column;
+    position: relative;
+    padding: 3em 2em 3em 2em;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 7% 0px; 
+    grid-template-areas: 
+    "."
+    "."
+    ".";
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    i {
+        padding-right: 1em;
+    }
+    &__number-button {
+        display: flex;
+        background-color: $colour-primary;
+        border-radius: 15px;
+        position: absolute;
+        height: 1.5em;
+        width: 1.5em;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        left: 20px;
+    }
+    
+}
+.restaurants {
+    background-color: $colour-dark-white;
+    padding: 3em 2em 10em 2em;
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    &__forms {
+        padding-top: 2em;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 3% 0%; 
+        grid-template-areas: 
+        "."
+        "."
+        "."
+        ".";
+        &__card {
+            @include shadow;
+            display: block;
+            background: white; // A ENLEVER
+            border-radius: 1em;
+            max-height: 300px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 75%;
+                border-radius: 1em 1em 0 0;
+                object-fit: cover;
+            }
+            &--new {
+                position: absolute;
+                top: 1em;
+                right: 0.75em;
+                background-color: $colour-tertiary;
+                padding: .5em;
+                border-radius: .1em;
+            }
+            &__footer {
+                justify-content: space-between;
+                display: flex;
+                padding: 1em;
+                color: black;
+            }
+        }
+    }
+}

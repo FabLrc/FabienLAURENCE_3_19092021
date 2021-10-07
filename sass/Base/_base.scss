@@ -3,7 +3,7 @@
     text-decoration: none;
 }
 main {
-    @include justify-center;
+    @include justify-column;
 }
 .block-page {
     max-width: 1440px;

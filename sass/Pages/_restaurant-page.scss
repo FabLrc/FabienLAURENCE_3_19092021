@@ -1,0 +1,12 @@
+.restaurant-image {
+    @include justify-center; // Pour que l'image du restaurant soit centrée
+    img {
+        width: 120%;
+    }
+}
+.menu {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
