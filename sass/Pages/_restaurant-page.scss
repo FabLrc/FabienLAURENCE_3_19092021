@@ -2,11 +2,46 @@
     @include justify-center; // Pour que l'image du restaurant soit centrée
     img {
         width: 120%;
+        max-height: 30em;
+        object-fit: cover;
     }
 }
 .menu {
+    margin-top: -4em;
+    border-radius: 2em 2em 0 0;
+    padding: 2em;
+    background-color: chartreuse;
+    &__button {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 5em 0 5em 0;
+        
+    }
     &__header {
         display: flex;
         justify-content: space-between;
+        padding: 1em 2em 0 1em;
     }
-}
+    &__choices {
+        display: grid;
+        &__card {
+            background-color: white;
+            padding: 1em;
+            display: flex;
+            border-radius: 0.5em;
+            margin: 1em 0 0 0;
+            @include shadow;
+        }
+            &__infos {
+                flex: 1;
+            }
+            &__price {
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-left: 0.5em;
+                display: flex;
+            }
+        }
+    }
+    
