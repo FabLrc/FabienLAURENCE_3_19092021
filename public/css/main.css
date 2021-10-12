@@ -344,4 +344,19 @@ footer a:hover {
   display: -ms-flexbox;
   display: flex;
 }
+
+.menu h3 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu h3::after {
+  content: "";
+  width: 3em;
+  height: .25em;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+}
 /*# sourceMappingURL=main.css.map */
