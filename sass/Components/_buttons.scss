@@ -9,4 +9,13 @@
     text-decoration: none;
     font-weight: bold;
     @include shadow;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+    a {
+        color: white;
+    }
 }

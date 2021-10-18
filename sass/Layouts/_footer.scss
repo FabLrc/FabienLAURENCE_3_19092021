@@ -5,8 +5,14 @@ footer {
     @include justify-column;
     a {
         color: white;
+        margin-bottom: 0.4em;
         &:hover {
             color: $colour-secondary;
         }
+    }
+    h4 {
+        font-size: larger;
+        margin-bottom: .8em;
+        font-weight: normal;
     }
 }
