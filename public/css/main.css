@@ -87,15 +87,15 @@ main {
 .like-button-true {
   color: transparent;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-  -webkit-transition: background 1s, -webkit-transform 400ms;
-  transition: background 1s, -webkit-transform 400ms;
-  transition: background 1s, transform 400ms;
-  transition: background 1s, transform 400ms, -webkit-transform 400ms;
+  -webkit-transition: background 1s, -webkit-transform 600ms;
+  transition: background 1s, -webkit-transform 600ms;
+  transition: background 1s, transform 600ms;
+  transition: background 1s, transform 600ms, -webkit-transform 600ms;
 }
 
 .like-button-true:hover {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
   background: -webkit-linear-gradient(#9c47fc, #356ad2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -297,6 +297,10 @@ footer h4 {
   border-radius: 1em;
   max-height: 300px;
   position: relative;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .restaurants__forms__card img {
@@ -335,6 +339,11 @@ footer h4 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+
+.restaurants__forms__card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .restaurant-image {

@@ -7,9 +7,9 @@
     &-true {
         color: transparent;
         background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-        transition: background 1s, transform 400ms;
+        transition: background 1s, transform 600ms;
         &:hover {
-            transform: scale(1.60);
+            transform: scale(1.75);
             background: -webkit-linear-gradient(#9c47fc, #356ad2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
