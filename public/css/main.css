@@ -34,8 +34,7 @@ main {
 
 .button {
   background: #9356dc;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: 0deg, #9356dc 0%, #ff79da 100%;
   border: 0;
   border-radius: 100px;
   padding: 1.2em;
@@ -85,20 +84,18 @@ main {
 }
 
 .like-button-true {
-  color: transparent;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-  -webkit-transition: background 1s, -webkit-transform 600ms;
-  transition: background 1s, -webkit-transform 600ms;
-  transition: background 1s, transform 600ms;
-  transition: background 1s, transform 600ms, -webkit-transform 600ms;
+  background: -webkit-linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  opacity: 0;
 }
 
 .like-button-true:hover {
-  -webkit-transform: scale(1.75);
-          transform: scale(1.75);
-  background: -webkit-linear-gradient(#9c47fc, #356ad2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
 header {
