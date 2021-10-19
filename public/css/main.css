@@ -76,6 +76,31 @@ main {
   color: #818181;
 }
 
+.like-button {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.like-button-true {
+  color: transparent;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  -webkit-transition: background 1s, -webkit-transform 400ms;
+  transition: background 1s, -webkit-transform 400ms;
+  transition: background 1s, transform 400ms;
+  transition: background 1s, transform 400ms, -webkit-transform 400ms;
+}
+
+.like-button-true:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +325,16 @@ footer h4 {
   display: flex;
   padding: 1em;
   color: black;
+}
+
+.restaurants__forms__card__footer__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .restaurant-image {
