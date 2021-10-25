@@ -121,3 +121,37 @@
         }
     }
 }
+// MEDIAQUERIES
+@media screen and (min-width: 1200px) 
+{
+    .functionning {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0% 3%; 
+        grid-template-areas: 
+          ". . ."
+          ". . .";
+        h3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        &__number-button {
+            position: relative; // ??
+        }
+    }
+    .restaurants__forms { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 5fr 5fr; 
+        gap: 6% 3%; 
+        grid-template-areas: 
+          ". ."
+          ". ."
+          ". ."; 
+        h3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}

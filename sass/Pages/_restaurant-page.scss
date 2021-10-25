@@ -51,6 +51,24 @@
                 display: flex;
                 font-weight: bold;
             }
+            &__validation {
+                background-color: $colour-tertiary;
+                margin: -1em -5em -1em 1em;
+                width: 4rem;
+                @include justify-center;
+                align-items: center;
+                transition-duration: 400ms;
+                &__icon {
+                    @include justify-center;
+                    align-items: center;
+                    height: 1.6em;
+                    width: 1.6em;
+                    background-color: white;
+                    border-radius: 100px;
+                    transform: rotate(180deg);
+                    transition-duration: 400ms;
+                }
+            }
         }
     }
     h3 {
@@ -105,4 +123,16 @@
 }
 .delay-9 {
     animation-delay: 1.8s;
+}
+// Mediaqueries //
+@media screen and (min-width: 1200px) 
+{
+    .menu__choices {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0% 3%; 
+        grid-template-areas: 
+          ". . ."; 
+    }
 }
