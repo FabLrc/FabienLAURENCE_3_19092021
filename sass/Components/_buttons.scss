@@ -1,6 +1,7 @@
 .button
 {
     background: rgb(147,86,220);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     border: 0;
     border-radius: 100px;
     padding: 1.2em;
@@ -8,13 +9,9 @@
     text-decoration: none;
     font-weight: bold;
     @include shadow;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 300ms;
+    transition: background 0.3s;
+    cursor: pointer;
     &:hover {
-        transform: scale(1.15);
-    }
-    a {
-        color: white;
+        background: white;
     }
 }

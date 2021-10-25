@@ -29,7 +29,6 @@
         align-items: center;
         display: flex;
         max-width: 300px;
-    
     }
 }
 .functionning {
@@ -86,7 +85,7 @@
         &__card {
             @include shadow;
             display: block;
-            background: white; // A ENLEVER
+            background: white;
             border-radius: 1em;
             max-height: 300px;
             position: relative;

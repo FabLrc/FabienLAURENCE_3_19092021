@@ -11,16 +11,19 @@
     color: $colour-primary;
     animation: loader-animation 2s;
     opacity: 0;
+    visibility: hidden;
 }
 @keyframes loader-animation {
     from {
-        opacity: 1;
+      visibility: visible;
+      opacity: 1;
     }
     75% {
-        opacity: 1;
+      opacity: 1;
     }
     to {
-        opacity: 0;
+      opacity: 0;
+      visibility: hidden
     }
 }
 .lds-ellipsis {

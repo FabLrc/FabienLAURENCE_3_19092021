@@ -34,6 +34,8 @@ main {
 
 .button {
   background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   border: 0;
   border-radius: 100px;
   padding: 1.2em;
@@ -42,23 +44,13 @@ main {
   font-weight: bold;
   -webkit-box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.27);
   box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  cursor: pointer;
 }
 
 .button:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.button a {
-  color: white;
+  background: white;
 }
 
 .button-functionning {
@@ -117,10 +109,12 @@ main {
   -webkit-animation: loader-animation 2s;
           animation: loader-animation 2s;
   opacity: 0;
+  visibility: hidden;
 }
 
 @-webkit-keyframes loader-animation {
   from {
+    visibility: visible;
     opacity: 1;
   }
   75% {
@@ -128,11 +122,13 @@ main {
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
 @keyframes loader-animation {
   from {
+    visibility: visible;
     opacity: 1;
   }
   75% {
@@ -140,6 +136,7 @@ main {
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
