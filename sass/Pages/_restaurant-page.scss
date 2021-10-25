@@ -37,6 +37,8 @@
             display: flex;
             border-radius: 0.5em;
             margin: 1em 0 0 0;
+            animation: card-spawn $card-spawn-duration;
+            transform: scale(0);
             @include shadow;
             &__infos {
                 flex: 1;
@@ -64,4 +66,22 @@
             bottom: -0.3em;
         }
     }
+}
+// Keyframes propres aux cartes des menus //
+@keyframes card-spawn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.delay-1 {
+    animation-delay: 0.2s;
+}
+.delay-2 {
+    animation-delay: 0.4s;
+}
+.delay-3 {
+    animation-delay: 0.6s;
 }

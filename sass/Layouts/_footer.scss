@@ -1,8 +1,9 @@
 footer {
     background-color: $colour-footer;
     color: white;
-    padding: 1em 2em 0 2em;
-    @include justify-column;
+    i {
+        width: 22px;
+    }
     a {
         color: white;
         margin-bottom: 0.4em;
@@ -14,5 +15,10 @@ footer {
         font-size: larger;
         margin-bottom: .8em;
         font-weight: normal;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em 0 2em;
     }
 }
