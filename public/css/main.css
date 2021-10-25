@@ -86,6 +86,7 @@ main {
   -webkit-transform: scale(1.6);
           transform: scale(1.6);
   opacity: 0;
+  cursor: pointer;
 }
 
 .like-button-true:hover {
@@ -572,8 +573,9 @@ footer__container {
   margin: 1em 0 0 0;
   -webkit-animation: card-spawn 0.5s;
           animation: card-spawn 0.5s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  opacity: 0;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.27);
   box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.15);
 }
@@ -616,23 +618,19 @@ footer__container {
 
 @-webkit-keyframes card-spawn {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes card-spawn {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -649,5 +647,35 @@ footer__container {
 .delay-3 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.delay-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.delay-7 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.delay-8 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.delay-9 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 /*# sourceMappingURL=main.css.map */
