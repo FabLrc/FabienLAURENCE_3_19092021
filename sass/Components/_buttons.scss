@@ -9,9 +9,9 @@
     text-decoration: none;
     font-weight: bold;
     @include shadow;
-    transition: background 0.3s;
+    transition: filter 0.3s;
     cursor: pointer;
     &:hover {
-        background: white;
+        filter: brightness(1.2);
     }
 }
