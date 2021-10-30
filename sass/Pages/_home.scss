@@ -137,7 +137,8 @@
             grid-column-end: 4;
         }
         &__number-button {
-            position: relative; // ??
+            left: auto;
+            margin-left: -45px;
         }
     }
     .restaurants__forms { 
@@ -153,5 +154,14 @@
             grid-column-start: 1;
             grid-column-end: 3;
         }
+    }
+    .nbr_1 {
+        left: 20px;
+    }
+    .nbr_2 {
+        left: 150px;
+    }
+    .nbr_3 {
+        right: 150px;
     }
 }

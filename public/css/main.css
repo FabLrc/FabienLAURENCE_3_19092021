@@ -278,6 +278,7 @@ header span {
 footer {
   background-color: #353535;
   color: white;
+  padding-top: 1em;
 }
 
 footer i {
@@ -518,7 +519,8 @@ footer__container {
     grid-column-end: 4;
   }
   .functionning__number-button {
-    position: relative;
+    left: auto;
+    margin-left: -45px;
   }
   .restaurants__forms {
     display: -ms-grid;
@@ -534,6 +536,15 @@ footer__container {
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .nbr_1 {
+    left: 20px;
+  }
+  .nbr_2 {
+    left: 150px;
+  }
+  .nbr_3 {
+    right: 150px;
   }
 }
 
@@ -653,6 +664,8 @@ footer__container {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   border-radius: 0 0.5em 0.5em 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .menu__choices__card__validation__icon {
@@ -675,16 +688,18 @@ footer__container {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   color: #99e2d0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .menu__choices__card:hover .menu__choices__card__validation {
-  -webkit-animation: validation .5s;
-          animation: validation .5s;
+  width: 4em;
 }
 
 .menu__choices__card:hover .menu__choices__card__validation__icon {
-  -webkit-animation: validation__icon .5s;
-          animation: validation__icon .5s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  opacity: 1;
 }
 
 .menu h3 {
@@ -701,50 +716,6 @@ footer__container {
   position: absolute;
   left: 0;
   bottom: -0.3em;
-}
-
-@-webkit-keyframes validation {
-  from {
-    width: 0em;
-  }
-  to {
-    width: 4em;
-  }
-}
-
-@keyframes validation {
-  from {
-    width: 0em;
-  }
-  to {
-    width: 4em;
-  }
-}
-
-@-webkit-keyframes validation__icon {
-  from {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
-}
-
-@keyframes validation__icon {
-  from {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 1;
-  }
 }
 
 @-webkit-keyframes card-spawn {
