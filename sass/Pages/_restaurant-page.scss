@@ -39,7 +39,8 @@
             margin: 1em 0 0 0;
             animation: card-spawn 0.5s;
             opacity: 0;
-            animation-fill-mode: both;
+            animation-fill-mode: both;  
+            cursor: pointer;
             @include shadow;
             &__infos {
                 flex: 1;
@@ -53,11 +54,12 @@
             }
             &__validation {
                 background-color: $colour-tertiary;
-                margin: -1em -5em -1em 1em;
-                width: 4rem;
+                margin: -1em -1em -1em 1em;
+                width: 0em;
                 @include justify-center;
                 align-items: center;
-                transition-duration: 400ms;
+                animation-fill-mode: both;
+                border-radius: 0 0.5em 0.5em 0;
                 &__icon {
                     @include justify-center;
                     align-items: center;
@@ -66,8 +68,17 @@
                     background-color: white;
                     border-radius: 100px;
                     transform: rotate(180deg);
-                    transition-duration: 400ms;
+                    opacity: 0;
+                    animation-fill-mode: both;
+                    color: $colour-tertiary;
                 }
+                    
+            }
+            &:hover .menu__choices__card__validation {
+                animation: validation .5s;
+            }
+            &:hover .menu__choices__card__validation__icon {
+                animation: validation__icon .5s;
             }
         }
     }
@@ -84,6 +95,25 @@
             left: 0;
             bottom: -0.3em;
         }
+    }
+}
+// Keyframes validation // 
+@keyframes validation {
+    from {
+        width: 0em;
+    }
+    to {
+        width: 4em;
+    }
+}
+@keyframes validation__icon {
+    from {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
     }
 }
 // Keyframes propres aux cartes des menus //

@@ -78,7 +78,7 @@ main {
 }
 
 .like-button-true {
-  background: -webkit-linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(90deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: opacity 300ms;
@@ -612,6 +612,7 @@ footer__container {
   opacity: 0;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  cursor: pointer;
   -webkit-box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.27);
   box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.15);
 }
@@ -638,8 +639,8 @@ footer__container {
 
 .menu__choices__card__validation {
   background-color: #99e2d0;
-  margin: -1em -5em -1em 1em;
-  width: 4rem;
+  margin: -1em -1em -1em 1em;
+  width: 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,8 +650,9 @@ footer__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  border-radius: 0 0.5em 0.5em 0;
 }
 
 .menu__choices__card__validation__icon {
@@ -669,8 +671,20 @@ footer__container {
   border-radius: 100px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
+  opacity: 0;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  color: #99e2d0;
+}
+
+.menu__choices__card:hover .menu__choices__card__validation {
+  -webkit-animation: validation .5s;
+          animation: validation .5s;
+}
+
+.menu__choices__card:hover .menu__choices__card__validation__icon {
+  -webkit-animation: validation__icon .5s;
+          animation: validation__icon .5s;
 }
 
 .menu h3 {
@@ -687,6 +701,50 @@ footer__container {
   position: absolute;
   left: 0;
   bottom: -0.3em;
+}
+
+@-webkit-keyframes validation {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 4em;
+  }
+}
+
+@keyframes validation {
+  from {
+    width: 0em;
+  }
+  to {
+    width: 4em;
+  }
+}
+
+@-webkit-keyframes validation__icon {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes validation__icon {
+  from {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes card-spawn {
