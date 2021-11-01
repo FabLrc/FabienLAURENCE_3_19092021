@@ -94,7 +94,7 @@ main {
 }
 
 .loader-container {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,6 +423,10 @@ footer__container {
   left: 20px;
 }
 
+.functionning__button:hover {
+  background-color: #eaeaea;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 3em 2em 10em 2em;
@@ -538,13 +542,13 @@ footer__container {
     grid-column-end: 3;
   }
   .nbr_1 {
-    left: 20px;
+    left: 4%;
   }
   .nbr_2 {
-    left: 150px;
+    left: 37%;
   }
   .nbr_3 {
-    right: 150px;
+    right: 31.5%;
   }
 }
 
